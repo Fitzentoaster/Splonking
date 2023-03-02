@@ -1,0 +1,87 @@
+5/31/22
+Re-opened code for the first time in months. Time to clean up and finish this project!
+
+
+2021:
+
+5/12
+Implemented power-up shield 
+refactored border calculation
+Changed platform color spawning rules
+Re-formulated to get rid of downcasting
+redid HUD as an entity and changed rendering process
+Implemented bee 
+
+5/13 
+Greatly re-organized data and object model
+Eliminated all C Style type casts
+Migrated to STL containers from raw arrays
+
+5/14
+Reworked collision system to OOP model: still needs work
+
+5/15
+Reworked world generation/wall creation
+Improved collision processing - still needs work 
+Fun: Implemented scanlines overlay 
+Fixed delta time physics bug
+
+5/16
+Redid rendering logic: added graphics handler and graphical cache system 
+
+5/17
+Implemented Z Sorting
+Redid collision/death logic
+Added rough animation capabilities/animations 
+Smoothed out some spawning, redid hud rendering.
+
+5/18
+Refined scanlines: now scale properly to user resolution. Woot
+Changed OOB behavior: implemented "silent" despawn 
+Cleaned up remnants of grid based level design
+
+5/19
+Implemented megacrush powerup 
+Immediately removed megacrush powerup 
+
+5/20
+General cleanup
+Major refactoring of spawn: generate_init to separate funcs in file 
+
+5/21 
+attempted to change 'type' from string to enum, broke everything. 
+
+5/22 
+rolled back code after failure to fix
+
+5/23 
+worked on other stuff 
+
+5/24
+gamepad support 
+
+5/25
+Analog support
+Some graphical updates/new title screen (rough still)
+Reworked game loop to allow for game over, pause, menu, etc. 
+
+5/26 
+Redid project organization
+Redid makefile 
+
+5/27
+Refactored free functions into separate file 
+
+5/28 
+Started documentation
+Cleaned up code to avoid compiler warnings
+
+5/29 
+Major refactor: main loop is now farmed out to functions, much more modular design 
+Fix sfx double-playback bug 
+Added error checking, still need to finish 
+
+6/3
+Implemented main menu 
+
+6/4

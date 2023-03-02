@@ -1,0 +1,181 @@
+redo xspd and yspd *
+refactor generate_init into other functions *
+make a "SDL_Struct" to hold renderer, windows, etc. *
+make controller accept slot 2, 3, etc. (Defaults to lowest numbered now) *
+add screenshot functionality
+
+
+remove checks for same collision (ID check, if id1 < id2) *
+
+redo collision system to collision classes *
+	fix wall collisions *
+	pickups off platform *
+
+implement "despawn()" entity method for clearing oob or at end of level *
+
+clean up collision response to allow for new audio playing logic *
+
+clean up collision system to account for new animation/sounds *
+
+clean up (del node) level spawning *
+
+clean up objects (init graphics, etc) *
+
+change hud to render on top of everything. *
+
+refine data struct *
+
+shader or scanline effect *
+	improve: shaders?
+	
+refactor walls to be standard entities *
+
+error handling
+
+exception handling 
+
+eliminate C-Style issues *
+
+Switch to graphics pool/buffer vs loading each time (big FPS drops on spawn) *
+Implement z ordering *
+
+Refactor spawner behavior to avoid function calls with magic strings/types repeatedly *
+Do more of it 
+
+Migrate to keystate polling vs events *
+add gamepad support *
+	tighten it up, maybe remapping?
+
+implement homing missiles *
+	-add collision *
+	
+implement powerup shield *
+	-add collision *
+	
+implement z-order *
+
+implement enemy bee*
+	-add collision*
+laser sound *
+
+laser turret color changing to signal firing
+
+fix platform spawning color *
+fix platform spawning *
+
+switch entity type to enum not string *
+
+render hud function: entity *
+improve reflection: 
+	-fuel_pickup *
+	-moonrock (gets stuck, destroy) *
+
+clean up code: get ready to write documentation
+
+animations: entities?
+	-player explosion *
+	-moonrock explosion *
+	-ghostal die (little explosion?) *
+
+change high score to serialized
+
+ini file 
+
+new title screen
+
+menus
+
+changing resolution
+
+changing sfx volume
+
+Pausa *
+
+balance sfx vols, redo 
+redo gfx 
+clean up code: functions in order, etc.
+
+6/9/2022
+Implemented flashing shield
+Implemented color changing turret 
+Game balance changes 
+
+5/12
+Implemented power-up shield 
+refactored border calculation
+Changed platform color spawning rules
+Re-formulated to get rid of downcasting
+redid HUD as an entity and changed rendering process
+Implemented bee 
+
+5/13 
+Greatly re-organized data and object model
+Eliminated all C Style type casts
+Migrated to STL containers from raw arrays
+
+5/14
+Reworked collision system to OOP model: still needs work
+
+5/15
+Reworked world generation/wall creation
+Improved collision processing - still needs work 
+Fun: Implemented scanlines overlay 
+Fixed delta time physics bug
+
+5/16
+Redid rendering logic: added graphics handler and graphical cache system 
+
+5/17
+Implemented Z Sorting
+Redid collision/death logic
+Added rough animation capabilities/animations 
+Smoothed out some spawning, redid hud rendering.
+
+5/18
+Refined scanlines: now scale properly to user resolution. Woot
+Changed OOB behavior: implemented "silent" despawn 
+Cleaned up remnants of grid based level design
+
+5/19
+Implemented megacrush powerup 
+Immediately removed megacrush powerup 
+
+5/20
+General cleanup
+Major refactoring of spawn: generate_init to separate funcs in file 
+
+5/21 
+attempted to change 'type' from string to enum, broke everything. 
+
+5/22 
+rolled back code after failure to fix
+
+5/23 
+worked on other stuff 
+
+5/24
+gamepad support 
+
+5/25
+Analog support
+Some graphical updates/new title screen (rough still)
+Reworked game loop to allow for game over, pause, menu, etc. 
+
+5/26 
+Redid project organization
+Redid makefile 
+
+5/27
+Refactored free functions into separate file 
+
+5/28 
+Started documentation
+Cleaned up code to avoid compiler warnings
+
+5/29 
+Major refactor: main loop is now farmed out to functions, much more modular design 
+Fix sfx double-playback bug 
+Added error checking, still need to finish 
+
+6/3
+Implemented main menu 
